@@ -3,4 +3,7 @@
 	b=20
         c=a+b;
 	printf(this is sum of a & b "c");
+
+for("a-b", c="resul of c");
+
 }
