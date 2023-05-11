@@ -1,0 +1,19 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello Ribbon this is first code from Gurgaon'
+                sh '''
+                hostname
+                date
+                env | grep -e PATH -e JAVA_HOME
+                which java
+                java -version
+                '''
+            }
+        }
+}
+}
+
